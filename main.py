@@ -1,10 +1,3 @@
-#hadj chikh Nour djihane M1 Immunologie 13/12/2025
-#Les membres du groupe
-#Meniri chaima
-#Yagoub mohammed el amine 
-#arbi sihem
-#Arbi hayet
-
 import pandas as pd 
 #Donées:séquence ADN, Longueur ,Pourcentage
 data={
@@ -16,12 +9,23 @@ data={
 df=pd.DataFrame(data)
 print("*************Création et Affichage **************","\n")
 print(df)
-#Affichage du tableau
+
+#1-Affichage du tableau
 print("opération")
 
+#2-sélectionner la colonne "longueur"
+longueur = df["Longueur"]
+print(longueur)
 
+#3-Filtrer les séquences de longueur ≥ 10
+df_filtre=df[df["Longueur"] > 10]
+print(df_filtre)
 
-
-
+#4-Pourcentage moyen de GC arrondi à 3 décimales
+#je calcule d'abord la moyenne de la colonne Pourcentage GC
+moyenne_gc = df["Pourcentage GC"].mean()
+# j'arrondis la moyenne à 3 chiffres après la virgule
+moyenne_gc = round(moyenne_gc, 3)
+print(moyenne_gc)
 
 
