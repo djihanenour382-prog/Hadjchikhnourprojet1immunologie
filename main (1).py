@@ -1,3 +1,3 @@
-#selectionner la colonne "longueur"
+#sélectionner la colonne "longueur"
 longueur=df["longueur"]
 print(df["longuer"])
