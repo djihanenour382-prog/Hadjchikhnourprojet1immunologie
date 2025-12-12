@@ -18,3 +18,7 @@ print("**********Création et Affichage**********")
 print(df)
 #Affichage du tableau
 print("opération")
+
+# 2) Sélectionner et afficher uniquement la colonne "longueur".
+longueur=df["longueur"]
+print(df["longueur"])
