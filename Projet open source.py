@@ -38,7 +38,7 @@ print(f"pourcentage moyen de GC : {average_gc:.3f}%")
 # 5) Ajouter une colonne "Categorie GC"
 print("Ajout de la colonne 'Categorie GC'")
 #Fonction lambda pour categorier le pourcentage de GC
-
+df["Categorie GC"] = df["Pourcentage GC"].apply(
 
 
 
