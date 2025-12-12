@@ -20,5 +20,5 @@ print(df)
 print("opération")
 
 # 2) Sélectionner et afficher uniquement la colonne "longueur".
-longueur=df["longueur"]
-print(df["longueur"])
+Longueur=df["Longueur"]
+print(df["Longueur"])
