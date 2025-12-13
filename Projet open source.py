@@ -57,6 +57,12 @@ std_gc = df["Pourcentage GC"].std()
 std_longueur = df["Longueur"].std()
 print(f"Écart-type du Pourcentage GC : {std_gc:.2f}")
 print(f"Écart-type de la Longueur : {std_longueur:.2f}")
+# 8) Sauvegarder le tableau final dans un fichier CSV 
+print("Sauvegarder du DataFrame dans un fichier CSV ")
+#Sauvegarder le DataFrame dans un fichier CSV (sans l'index)
+nom_de_fichier = "analyse_séquences_adn_final.CSV"
+df.to_csv ( nom_de_fichier , index=False)
+print(f"Le tableau finala été sauvegarder dans {nom_de_fichier} avec succés.")
 
 
 
