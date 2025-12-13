@@ -43,13 +43,13 @@ df["Categorie GC"] = df["Pourcentage GC"].apply(
     lambda x: "riche" if x > 55
     else ("moyen" if 45 <= x <= 55
     else "faible"))
+
 print (df)
-
-
-
-
-
-
+# 6) Ajouter une colonne donnant le nombre de "G" dans chaque séquence .
+print ( "ajout de la clonne nobre de G")
+# Utiliser la méthodes .str.count() sur la clonne "séquence"
+df["nombre de G"] = df["séquence"].str.count("G") 
+print(df) 
 
 # 7) Calculer l'écart-type du %GC et de la longueur des séquences.
 print(" Calcul de l'Écart-type (Standard Deviation - std)")
